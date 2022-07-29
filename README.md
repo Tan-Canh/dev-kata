@@ -1,1 +1,4 @@
-# dev-kata
+# DAIPLG KATA
+
+- Anagrams
+- Conflicting Objectives
