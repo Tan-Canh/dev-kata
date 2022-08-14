@@ -1,0 +1,57 @@
+How Big ?
+1. roughly how many binary digits (bit) are required for the unsigned representation of:
+    a. 1,000 <=> 10 bit
+    b. 1,000,000 <=> 20 bit
+    c. 1,000,000,000 <=> 30 bit
+    d. 1,000,000,000,000 <=> 40 bit
+    d. 8,000,000,000 <=> 43 bit
+
+2. My town has approximately 20,000 residences. How much space is required to store the names,
+    addresses, and a phone number for all of these (if we store them as characters)?
+
+    Answer:
+    1 char = 1 byte
+
+    name : 70 char = 70 bytes (https://stackoverflow.com/questions/30485/what-is-a-reasonable-length-limit-on-person-name-fields)
+    address: 100 char = 100 bytes (https://www.drupal.org/project/addressfield/issues/2085859)
+    phoneNumber: 10 char = 10 bytes
+    => a person will need 180 bytes to store his info
+    => 20000 residences will need 180 * 20000 = 3600000 bytes ~ 3600 KB ~ 3,6 MB
+
+3. I’m storing 1,000,000 integers in a binary tree. Roughly how many nodes and levels can I expect the tree to have?
+    Roughly how much space will it occupy on a 32-bit architecture?
+
+    Answer:
+    a.  1,000,000 integers in a binary tree => have 1,000,000 nodes and levels = [log2(1000000] + 1 = 20
+    b.  1 node have to store address of left child and right child and an integer
+        integers: 4 byte
+        2 address in 32bit architecture: 2* 32 bit = 2*4byte = 8byte
+        => 1 nodes need 12 bytes => 1000000 nodes need 1000000* 12 ~ 12000 KB ~ 12 MB
+
+How Fast?
+1. My copy of Meyer’s Object Oriented Software Construction has about 1,200 body pages. Assuming no flow control or
+    protocol overhead, about how long would it take to send it over an async 56k baud modem line?
+
+   Answer:
+   Assuming that each page have 3000 characters = 3000 byte
+   v = 56 kbps = 7KBps ~ 7000byte/s
+   1200 pages will take: 1200 * 3000 / 7000 ~ 515s ~ 8.6 minutes
+
+2. My binary search algorithm takes about 4.5mS to search a 10,000 entry array, and about 6mS to search 100,000 elements.
+   How long would I expect it to take to search 10,000,000 elements (assuming I have sufficient memory to prevent paging).
+
+   Answer:
+   O(n) binary search is log(n)
+   Search 10000 entry need to traverse log2(10000) ~ 14 node <=> 4.5mS
+   Search 100000 entry need to traverse log2(100000) ~ 17 node <=> 6mS
+   Search 10,000,000 entry need to traverse log2(10000000) ~ 24 node <=> ~ 0.4 * 24 = 9.6 mS
+
+3. Unix passwords are stored using a one-way hash function. In our particular system, passwords can be up to 16 characters long,
+    and there are 96 possible characters at each position. If it takes 1mS to generate the password hash, is this a viable
+    approach to attacking a password?
+
+   Answer:
+   password have 16 char, one char have 96 possible char => have 96^16 possible password
+
+   Time need to check all possible password is 96^16 *1 * 10^-3 : 3600 : 24 : 365 = 1.6 * 10^21 năm => hacker died
+   => can't attack a password
