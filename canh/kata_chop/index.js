@@ -33,6 +33,7 @@ const iterativeBinarySearch = (num, arr) => {
       left = mid + 1;
     }
   }
+
   if (arr[left] === num) {
     return left;
   }
