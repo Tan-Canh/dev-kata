@@ -18,7 +18,7 @@ const recursiveBinarySearch = (num, arr, left, right) => {
   return -1;
 };
 
-var iterativeBinarySearch = function (num, arr) {
+const iterativeBinarySearch = (num, arr) => {
   let left = 0;
   let right = arr.length;
   let mid = 0;
@@ -35,9 +35,9 @@ var iterativeBinarySearch = function (num, arr) {
   }
   if (arr[left] === num) {
     return left;
-  } else {
-    return -1;
   }
+
+  return -1;
 };
 
 module.exports = {

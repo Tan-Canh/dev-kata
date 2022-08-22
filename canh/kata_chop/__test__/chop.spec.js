@@ -25,8 +25,8 @@ describe("kata chop", () => {
     expect(recursiveBinarySearch(8, [1, 3, 5, 7])).toBe(-1);
   });
 
-  test("iterativeSearch", () => {
-    // iterativeSearch
+  test("iterativeBinarySearch", () => {
+    // iterativeBinarySearch
     expect(iterativeBinarySearch(3, [])).toBe(-1);
     expect(iterativeBinarySearch(3, [1])).toBe(-1);
     expect(iterativeBinarySearch(1, [1])).toBe(0);
