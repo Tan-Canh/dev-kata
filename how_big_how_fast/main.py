@@ -25,8 +25,10 @@ while True:
     elif option == 3:
         n = int(input("Enter number of integers you want to store in binary tree: "))
         result = HowBig().get_binary_level_by_number_of_node(node_count=n)
-        print(f"To store {n} integers in binary tree need {n} nodes and {result} levels")
+        print(
+            f"To store {n} integers in binary tree need {n} nodes and {result} levels"
+        )
     elif option == 4:
-        pass
+        print("This option is not ready to support")
     else:
         print("Invalid option!")
