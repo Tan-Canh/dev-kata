@@ -1,6 +1,5 @@
 from unittest import TestCase, mock
 
-from common.consts import Messages
 from src.file_handler import FileHandler
 
 fake_dat_file_name = "weather.dat"
