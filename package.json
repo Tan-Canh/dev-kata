@@ -4,5 +4,9 @@
   },
   "devDependencies": {
     "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jasmine-co": "^1.2.2"
   }
 }

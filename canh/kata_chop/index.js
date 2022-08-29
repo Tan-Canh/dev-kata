@@ -1,7 +1,7 @@
 const recursiveBinarySearch = (num, arr, left, right) => {
-  let l = left === undefined ? 0 : left;
-  let r = right === undefined ? arr.length : right;
-  let mid = Math.floor(l / 2 + r / 2);
+  const l = left === undefined ? 0 : left;
+  const r = right === undefined ? arr.length : right;
+  const mid = Math.floor(l / 2 + r / 2);
 
   if (l > r || arr.length === 0) {
     return -1;
