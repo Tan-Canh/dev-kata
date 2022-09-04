@@ -4,7 +4,7 @@ Rough estimation is a useful talent to possess. As you’re coding away, you may
 
 So this is a simple kata: a series of questions, each asking for a rough answer. Try to work each out in your head. I’ll post my answers (and how I got them) in a week or so.
 
-# How Big?
+## How Big?
 
 - roughly how many binary digits (bit) are required for the unsigned representation of:
   - 1,000
@@ -52,7 +52,7 @@ example convert decimal (base 10) to binary (base 2)
 
 ---
 
-# How Fast?
+## How Fast?
 
 - My copy of Meyer’s Object Oriented Software Construction has about 1,200 body pages. Assuming no flow control or protocol overhead, about how long would it take to send it over an async 56k baud modem line?
 
