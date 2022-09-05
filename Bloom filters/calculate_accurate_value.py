@@ -1,15 +1,15 @@
-from Bloom_Filters_QuangDG import BloomFilter
+from bloom_filters_quang_dg import BloomFilter
 import random
 import string
 
 
-def random_word(length: int):
-    output2 = ""
-    for idx3 in range(length):
-        char_output = random.choice(string.ascii_letters)
-        output2 += char_output
+def generate_word(length: int):
+    random_word = ""
+    for index in range(length):
+        random_char = random.choice(string.ascii_letters)
+        random_word += random_char
 
-    return output2
+    return random_word
 
 
 if __name__ == "__main__":

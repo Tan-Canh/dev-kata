@@ -1,5 +1,5 @@
 from unittest import TestCase
-from Bloom_Filters_QuangDG import BloomFilter
+from bloom_filters_quang_dg import BloomFilter
 from bitarray import bitarray
 import hashlib
 import mmh3
