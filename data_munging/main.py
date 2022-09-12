@@ -5,7 +5,6 @@ menu = {
     0: "Quit",
     1: "Get the day with the smallest temperature spread",
     2: "Get the name of the team with the smallest difference goals.",
-    3: "Get both (DRY fusion)",
 }
 
 while True:
@@ -24,8 +23,6 @@ while True:
         team = result["team"]
         difference = result["difference"]
         print(f"Team {team} has the smallest difference goals with {difference} goals")
-    elif option == 3:
-        print("This option is not ready to support")
     else:
         print("Invalid option!")
     print("-" * 100)
